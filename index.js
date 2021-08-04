@@ -2,8 +2,8 @@ const or = (a, b) => a || b;
 const nor = (a, b) => !(a || b);
 const and = (a, b) => a && b;
 const nand = (a, b) => !(a && b);
-const xor = (a, b) => !!(!!a ^ !!b)
-const xnor = (a, b) => !(!!a ^ !!b)
+const xor = (a, b) => !!(!!a ^ !!b);
+const xnor = (a, b) => !(!!a ^ !!b);
 const not = (a) => !a;
 
 const adder = (a, b, ci = false) => {
@@ -14,3 +14,5 @@ const adder = (a, b, ci = false) => {
   const co = or(v2, v3);
   return [sum, co];
 };
+
+module.exports = { or, nor, and, nand, xor, xnor, not, adder };
